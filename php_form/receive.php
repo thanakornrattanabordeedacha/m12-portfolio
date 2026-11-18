@@ -1,11 +1,6 @@
 <?php
-// Module 12 starter: HTML form -> PHP on the server.
-// Complete the TODOs after testing GET and POST in DevTools.
 $method = $_SERVER['REQUEST_METHOD'];
 
-// TODO 1: For GET, read the displayName value from $_GET.
-// TODO 2: For POST, read the displayName value from $_POST.
-// Hint: use the null coalescing operator ?? to provide an empty-string default.
 $name = '';
 if ($method === 'GET') {
   $name = $_GET['displayName'] ?? '';
